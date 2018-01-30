@@ -3,8 +3,8 @@ import cv2
 import numpy as np
 import glob
 from tqdm import tqdm
-from openslide import open_slide, ImageSlide
-from openslide.deepzoom import DeepZoomGenerator
+from tiler import WholeSlideTiler
+
 
 #one file for now
 files = glob.glob('img/*.svs')
@@ -15,11 +15,12 @@ for slidepath in tqdm(files):
     print(basename)
     basepath = os.path.join('/output', basename)
     print(basepath)
-    WholeSlideTiler
+    WholeSlideTiler(slidepath, basepath, 'jpeg',149 , 75 , True, True, 100,  12, True).run()
+
+    
 
 
 #TODO: Normalizing
 
-#TODO: Tilling
 
 #TODO: Display outcomes
