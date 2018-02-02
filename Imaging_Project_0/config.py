@@ -11,9 +11,9 @@ OUTPUT_FOLDER_PATH = os.path.join(CURRENT_DIR, "output")
 
 IMG_FORMAT = 'jpeg'
 
-TILE_SIZE = 149
+TILE_SIZE = 1000
 
-OVERLAP = 75
+OVERLAP = 0
 
 LIMIT_BOUNDS = True
 

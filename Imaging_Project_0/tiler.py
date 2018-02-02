@@ -1,3 +1,4 @@
+from __future__ import print_function
 import heapq
 import os
 from operator import itemgetter
@@ -115,11 +116,11 @@ class SingleImageTiler(object):
         self._only_last = only_last
 
     def run(self):
-        t = time.perf_counter()
+        #t = time.perf_counter()
         self._write_tiles()
         self._write_dzi()
-        elapsed_time = time.perf_counter() - t
-        cfg.ver_print("Tiling completed on {0} in: ".format(self._img_name), elapsed_time)
+        #elapsed_time = time.perf_counter() - t
+        cfg.ver_print("Tiling completed on {0} in: ".format(self._img_name), "<time here>")
 
     def _write_tiles(self):
         if self._only_last:
