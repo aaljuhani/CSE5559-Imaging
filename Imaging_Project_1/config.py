@@ -28,9 +28,9 @@ SAVE_REJECTED = False
 DONT_REJECT = False
 
 # increase this to reject more
-REJECT_THRESHOLD = 2000
+REJECT_THRESHOLD = 200
 
-ROTATE = True
+ROTATE = False
 
 MAX_WHITE_SIZE = (TILE_SIZE*TILE_SIZE)/2
 

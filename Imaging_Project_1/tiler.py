@@ -92,7 +92,6 @@ class TileWorker(Process):
         blur = cv2.GaussianBlur(img, (5, 5), 0)
         ret3, th3 = cv2.threshold(blur, cfg.REJECT_THRESHOLD, 255, cv2.THRESH_BINARY)
         im2, contours, hierarchy = cv2.findContours(th3, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
-
         return self.get_cnt_sum(contours, 2) < cfg.MAX_WHITE_SIZE
 
     @staticmethod
