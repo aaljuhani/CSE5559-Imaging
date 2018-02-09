@@ -1,3 +1,6 @@
 /.git
 /.ipynb_checkpoints
 .DS_Store
+*.zip
+*/input/
+*/output/
